@@ -1,0 +1,21 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="262.578" height="264" viewBox="0 0 262.578 264" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Bubble" opacity="0.2">
+<circle id="Ellipse 1" cx="131.289" cy="132.711" r="131.289" fill="url(#paint0_radial_0_605)"/>
+<ellipse id="Ellipse 3" cx="133.1" cy="54.0517" rx="88.1635" ry="52.036" transform="rotate(1.31904 133.1 54.0517)" fill="url(#paint1_linear_0_605)"/>
+<ellipse id="Ellipse 2" cx="94.6542" cy="31.2785" rx="25.8941" ry="12.3221" transform="rotate(-21.8222 94.6542 31.2785)" fill="url(#paint2_radial_0_605)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_0_605" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(131.289 132.711) rotate(90) scale(131.289)">
+<stop offset="0.854167" stop-color="#C4C4C4" stop-opacity="0"/>
+<stop offset="1" stop-color="#93C5FD" stop-opacity="0.69"/>
+</radialGradient>
+<linearGradient id="paint1_linear_0_605" x1="133.1" y1="2.01569" x2="133.1" y2="106.088" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3B82F6" stop-opacity="0.44"/>
+<stop offset="0.885417" stop-color="white" stop-opacity="0.02"/>
+</linearGradient>
+<radialGradient id="paint2_radial_0_605" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(94.6542 31.2785) rotate(90) scale(12.3221 25.8941)">
+<stop offset="0.760417" stop-color="white" stop-opacity="0.88"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

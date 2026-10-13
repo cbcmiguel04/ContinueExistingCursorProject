@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      try {
+        if (localStorage.getItem("pims-theme") === "dark") {
+          document.documentElement.classList.add("theme-dark");
+        }
+      } catch (e) {}
+    </script>
+    <title>PIMS 2.0</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <meta
+      name="description"
+      content="PIMS centralizes contracts, invoices, and compliance records into secure, automated approval channels."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="bubbles" aria-hidden="true">
+        <div class="bubble-stage">
+          <span class="bubble bubble-1">
+            <img src="assets/bubble-lg.svg" width="354.083" height="356" alt="" />
+          </span>
+          <span class="bubble bubble-2">
+            <img src="assets/bubble.svg" width="262.578" height="264" alt="" />
+          </span>
+          <span class="bubble bubble-3">
+            <img src="assets/bubble-lg.svg" width="354.083" height="356" alt="" />
+          </span>
+        </div>
+      </div>
+
+      <div class="frame">
+        <header class="site-header">
+          <div class="navbar">
+            <a class="brand" href="#overview" aria-label="PIMS 2.0">
+              <img class="brand-logo brand-logo-light" src="assets/logo-light.png" alt="" />
+              <img class="brand-logo brand-logo-dark" src="assets/logo-dark.png" alt="" />
+            </a>
+
+            <div class="nav-panel" id="primary-nav">
+              <nav class="nav-links" aria-label="Primary">
+                <a class="nav-link is-active" href="#overview" aria-current="page">Overview</a>
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#modules">Modules</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </nav>
+              <a class="btn btn-access" href="#access">Access PIMS</a>
+              <button
+                class="theme-toggle"
+                type="button"
+                aria-pressed="false"
+                aria-label="Turn on Dark Mode"
+              >
+                <span class="theme-switch">
+                  <span class="track"></span>
+                  <span class="knob">
+                    <svg class="icon-sun" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+                      <circle cx="6" cy="6" r="2.1" fill="#F79009" />
+                      <g stroke="#F79009" stroke-width="1.15" stroke-linecap="round">
+                        <path d="M6 1.15v1.15M6 9.7v1.15M1.15 6h1.15M9.7 6h1.15M2.55 2.55l.82.82M8.63 8.63l.82.82M9.45 2.55l-.82.82M3.37 8.63l-.82.82" />
+                      </g>
+                    </svg>
+                    <svg class="icon-moon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+                      <path d="M10.5 6.395C10.4213 7.2461 10.1019 8.0572 9.57912 8.73339C9.05632 9.40958 8.35175 9.9229 7.54785 10.2133C6.74396 10.5036 5.87399 10.5591 5.03975 10.373C4.20551 10.187 3.4415 9.76727 2.83711 9.16289C2.23273 8.5585 1.81297 7.79449 1.62695 6.96025C1.44094 6.12601 1.49636 5.25604 1.78673 4.45215C2.0771 3.64825 2.59042 2.94368 3.26661 2.42088C3.9428 1.89807 4.7539 1.57865 5.605 1.5C5.10671 2.17413 4.86692 3.00472 4.92927 3.84071C4.99161 4.67669 5.35193 5.46253 5.9447 6.0553C6.53747 6.64807 7.32331 7.00839 8.15929 7.07073C8.99528 7.13308 9.82587 6.89329 10.5 6.395Z" fill="#4E5BA6" stroke="#4E5BA6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                </span>
+                <span class="theme-toggle-label">
+                  <span class="label-to-dark">Turn on Dark Mode</span>
+                  <span class="label-to-light">Turn on Light Mode</span>
+                </span>
+              </button>
+            </div>
+            <button class="nav-menu" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+
+        <main>
+          <section class="hero" id="overview" aria-labelledby="hero-title">
+            <div class="banner">
+              <h1 id="hero-title">
+                <span class="line-dark section-in" style="animation-delay: 0.05s">Structured Records</span>
+                <span class="line-blue section-in" style="animation-delay: 0.16s">Streamlined Operations</span>
+              </h1>
+              <p class="lead section-in" style="animation-delay: 0.28s">
+                PIMS centralizes contracts, invoices, and compliance records into secure, automated
+                approval channels—giving multi-entity properties total visibility and audit readiness.
+              </p>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-explore section-in" href="#features" style="animation-delay: 0.4s">
+                Explore PIMS
+                <img src="assets/arrow-right.svg" width="20" height="20" alt="" />
+              </a>
+              <a class="btn btn-secondary section-in" href="#how-it-works" style="animation-delay: 0.48s">How it Works?</a>
+            </div>
+
+            <div class="showcase-block section-in" style="animation-delay: 0.56s">
+            <div class="segments-bar">
+              <div class="segments" role="group" aria-label="PIMS areas">
+                <button class="segment is-active" type="button" data-tab="documents" aria-pressed="true">Documents</button>
+                <button class="segment" type="button" data-tab="approvals" aria-pressed="false">Approvals</button>
+                <button class="segment" type="button" data-tab="invoicing" aria-pressed="false">E-invoicing</button>
+                <button class="segment" type="button" data-tab="transactions" aria-pressed="false">Transactions</button>
+                <button class="segment" type="button" data-tab="reports" aria-pressed="false">Reports</button>
+              </div>
+            </div>
+
+            <div class="preview">
+              <img class="showcase" data-panel="documents" src="assets/tab-documents.svg" width="5807" height="3394" alt="Documents workspace" />
+              <img class="showcase" data-panel="approvals" src="assets/tab-approvals.svg" width="5807" height="3394" alt="Approvals workspace" hidden />
+              <img class="showcase" data-panel="invoicing" src="assets/tab-invoicing.svg" width="5807" height="3394" alt="E-Invoicing workspace" hidden />
+              <img class="showcase" data-panel="transactions" src="assets/tab-transactions.svg" width="5807" height="3394" alt="Transactions workspace" hidden />
+              <img class="showcase" data-panel="reports" src="assets/tab-reports.svg" width="5807" height="3394" alt="Reports workspace" hidden />
+            </div>
+            </div>
+          </section>
+
+          <section class="access-section" id="access" aria-labelledby="access-title">
+            <div class="access-inner">
+              <div class="access-copy">
+                <h2 id="access-title" class="section-in" style="animation-delay: 0.2s">Access Your Workspace</h2>
+                <p class="section-in" style="animation-delay: 0.32s">Enter your organization's workspace slug to access your PIMS instance.</p>
+              </div>
+              <form class="access-form" action="https://pims-uat.propleinc.com/pims/login" novalidate>
+                <div class="access-field-wrap">
+                  <div class="access-field section-in" style="animation-delay: 0.44s">
+                    <img class="access-slash" src="assets/access-slash.svg" width="25.4545" height="25.4545" alt="" />
+                    <input type="text" name="workspace" placeholder="your-workspace" aria-label="Workspace slug" autocomplete="organization" spellcheck="false" />
+                    <button class="access-open section-in" type="submit" disabled style="animation-delay: 0.54s">Open Workspace</button>
+                  </div>
+                  <p class="access-hint section-in" style="animation-delay: 0.64s">e.g., company-name-pims</p>
+                  <span class="access-lines section-in" aria-hidden="true" style="animation-delay: 0.12s"></span>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <section class="features" id="features" aria-labelledby="features-title">
+            <div class="features-head">
+              <div class="features-intro">
+                <p class="features-kicker section-in" style="animation-delay: 0.05s">Features</p>
+                <h2 id="features-title" class="section-in" style="animation-delay: 0.14s">Everything Your Property<br />Operations Need</h2>
+              </div>
+              <p class="features-lead section-in" style="animation-delay: 0.24s">
+                <span>One platform for documents, storage,</span>
+                <span>and cross-module workflows</span>
+                <span>— built to fit your existing IT stack.</span>
+              </p>
+            </div>
+
+            <article class="feature-hero section-in" style="animation-delay: 0.34s">
+              <div class="feature-hero-bg" aria-hidden="true">
+                <img src="assets/features/bg.svg" width="1664" height="1074" alt="" />
+              </div>
+              <div class="feature-hero-body">
+                <div class="storage-scroller" tabindex="0" aria-label="Storage connections">
+                  <div class="storage-row">
+                  <article class="storage-card">
+                    <img src="assets/features/google-drive.svg" width="124" height="124" alt="" />
+                    <div>
+                      <h3>Google Drive</h3>
+                      <p>Shared Drive or folder</p>
+                    </div>
+                  </article>
+                  <article class="storage-card">
+                    <img src="assets/features/amazon-s3.svg" width="124" height="124" alt="" />
+                    <div>
+                      <h3>Amazon S3</h3>
+                      <p>Bucket + region</p>
+                    </div>
+                  </article>
+                  <article class="storage-card">
+                    <img src="assets/features/azure-blob.svg" width="124" height="124" alt="" />
+                    <div>
+                      <h3>Azure Blob</h3>
+                      <p>Container</p>
+                    </div>
+                  </article>
+                  <article class="storage-card">
+                    <img src="assets/features/nas.svg" width="124" height="124" alt="" />
+                    <div>
+                      <h3>NAS</h3>
+                      <p>Mounted Paths</p>
+                    </div>
+                  </article>
+                  <article class="storage-card">
+                    <img src="assets/features/sftp.svg" width="124" height="124" alt="" />
+                    <div>
+                      <h3>SFTP</h3>
+                      <p>Host + Folder</p>
+                    </div>
+                  </article>
+                  <article class="storage-card">
+                    <img src="assets/features/local-disk.svg" width="124" height="124" alt="" />
+                    <div>
+                      <h3>Local Disk</h3>
+                      <p>Built-in Default</p>
+                    </div>
+                  </article>
+                  </div>
+                </div>
+                <div class="feature-hero-copy">
+                  <h3>Keep your existing file storage</h3>
+                  <p>Keep documents and attachments in PIMS while connecting to your preferred storage infrastructure, from cloud platforms to on-premises systems.</p>
+                </div>
+              </div>
+            </article>
+
+            <div class="feature-scroller" tabindex="0" aria-label="PIMS features">
+              <article class="feature-card section-in" style="animation-delay: 0.44s">
+                <span class="feature-icon">
+                  <img src="assets/features/document-library.svg" width="64" height="64" alt="" />
+                </span>
+                <div class="feature-card-copy">
+                  <h3>Document Library</h3>
+                  <p>Every contract, invoice, and property file in one library. Approved, searchable, complete.</p>
+                </div>
+              </article>
+              <article class="feature-card section-in" style="animation-delay: 0.54s">
+                <span class="feature-icon">
+                  <img src="assets/features/bir-einvoicing.svg" width="64" height="64" alt="" />
+                </span>
+                <div class="feature-card-copy">
+                  <h3>BIR E-Invoicing</h3>
+                  <p>Generate sales invoices formatted directly for BIR requirements. No second system, no manual re-encoding.</p>
+                </div>
+              </article>
+              <article class="feature-card section-in" style="animation-delay: 0.64s">
+                <span class="feature-icon">
+                  <img src="assets/features/sap-transactions.svg" width="64" height="64" alt="" />
+                </span>
+                <div class="feature-card-copy">
+                  <h3>SAP Transactions</h3>
+                  <p>Export audit-ready transaction records formatted for SAP—directly from the client file or central database.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="how-it-works" id="how-it-works" aria-labelledby="how-it-works-title">
+            <div class="how-it-works-grid">
+              <div class="how-it-works-content">
+                <div class="how-it-works-head">
+                  <p class="how-it-works-kicker section-in" style="animation-delay: 0.05s">How It Works</p>
+                  <h2 id="how-it-works-title" class="section-in" style="animation-delay: 0.14s">How property records move?</h2>
+                  <p class="how-it-works-lead section-in" style="animation-delay: 0.24s">
+                    File, approve, and store. Connect BIR compliance and SAP exports whenever you need.
+                  </p>
+                </div>
+
+                <div class="how-steps section-in" role="tablist" aria-label="How PIMS works" style="animation-delay: 0.34s">
+                  <button class="how-step is-active" id="how-step-1" type="button" role="tab" aria-selected="true" aria-controls="how-step-visual" data-step="0">
+                    <span class="how-step-title"><span>01.</span> File &amp; Attach</span>
+                    <span class="how-step-description">
+                      Create your property record, assign metadata fields, and attach files in one go. Attachments link directly to the record while residing on your preferred storage—Drive, S3, Azure, NAS, or SFTP.
+                    </span>
+                    <span class="how-step-track" aria-hidden="true"><span></span></span>
+                  </button>
+                  <button class="how-step" id="how-step-2" type="button" role="tab" aria-selected="false" aria-controls="how-step-visual" data-step="1" tabindex="-1">
+                    <span class="how-step-title"><span>02.</span> Route &amp; Approve</span>
+                    <span class="how-step-description">
+                      Send each record through the right approval path, keep reviewers aligned, and preserve a clear audit trail from submission to final sign-off.
+                    </span>
+                    <span class="how-step-track" aria-hidden="true"><span></span></span>
+                  </button>
+                  <button class="how-step" id="how-step-3" type="button" role="tab" aria-selected="false" aria-controls="how-step-visual" data-step="2" tabindex="-1">
+                    <span class="how-step-title"><span>03.</span> Extend &amp; Integrate</span>
+                    <span class="how-step-description">
+                      Extend approved records into BIR-ready invoices and SAP exports whenever your workflow needs them, without re-encoding the same data.
+                    </span>
+                    <span class="how-step-track" aria-hidden="true"><span></span></span>
+                  </button>
+                </div>
+              </div>
+
+              <figure class="how-it-works-visual section-in" id="how-step-visual" role="tabpanel" aria-labelledby="how-step-1" aria-live="polite" style="animation-delay: 0.44s">
+                <img
+                  src="assets/how-it-works/step-1-file-and-attach.gif"
+                  width="1090"
+                  height="1200"
+                  alt="PIMS document library showing property records and attached files"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="inclusions" id="inclusions" aria-labelledby="inclusions-title">
+            <div class="inclusions-content">
+              <h2 id="inclusions-title" class="section-in" style="animation-delay: 0.12s">Included in the same workspace</h2>
+              <div class="inclusions-stage">
+                <div class="inclusions-bg" aria-hidden="true">
+                  <img class="section-in" src="/assets/inclusions-background.svg" width="1440" height="512" alt="" style="animation-delay: 0.05s" />
+                </div>
+                <div class="inclusions-scroller" tabindex="0" aria-label="Workspace inclusions">
+                  <div class="inclusions-row">
+                    <article class="inclusion-card section-in" style="animation-delay: 0.2s">
+                      <span class="inclusion-icon">
+                        <img src="/assets/48842.svg" width="24" height="24" alt="" />
+                      </span>
+                      <div class="inclusion-copy">
+                        <h3>Modular Flexibility</h3>
+                        <p>Toggle Documents, BIR EIS, and SAP on or off per workflow</p>
+                      </div>
+                    </article>
+                    <article class="inclusion-card section-in" style="animation-delay: 0.28s">
+                      <span class="inclusion-icon">
+                        <img src="/assets/0dfb3.svg" width="24" height="24" alt="" />
+                      </span>
+                      <div class="inclusion-copy">
+                        <h3>Flexible Architecture</h3>
+                        <p>Link as one continuous pipeline or run standalone</p>
+                      </div>
+                    </article>
+                    <article class="inclusion-card section-in" style="animation-delay: 0.36s">
+                      <span class="inclusion-icon">
+                        <img src="/assets/92821.svg" width="24" height="24" alt="" />
+                      </span>
+                      <div class="inclusion-copy">
+                        <h3>Global Search</h3>
+                        <p>Search records and pending sign-offs by reference ID or name</p>
+                      </div>
+                    </article>
+                    <article class="inclusion-card section-in" style="animation-delay: 0.44s">
+                      <span class="inclusion-icon">
+                        <img src="/assets/7f2da.svg" width="24" height="24" alt="" />
+                      </span>
+                      <div class="inclusion-copy">
+                        <h3>Automated Notifications</h3>
+                        <p>Get instant email alerts for status changes and pending sign-off requests.</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="addons" id="addons" aria-labelledby="addons-title-bir">
+            <div class="addons-header section-in" style="animation-delay: 0.08s">
+              <div class="addons-heading">
+                <p class="addons-kicker">Add-ons</p>
+                <div class="addons-title-stack">
+                  <h2 class="addon-title is-active" id="addons-title-bir" data-addon-heading="bir">
+                    Send sales invoices directly to BIR EIS
+                  </h2>
+                  <h2 class="addon-title" id="addons-title-sap" data-addon-heading="sap">
+                    ERP-Ready file exports
+                  </h2>
+                </div>
+                <p class="addons-lead">
+                  Process client files into clean accounting exports, or link approvals to auto-create SAP records.
+                </p>
+              </div>
+
+              <div class="addons-tabs" role="tablist" aria-label="Add-on workflow">
+                <button
+                  class="addon-tab is-active"
+                  id="addon-tab-bir"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="addon-panel-bir"
+                  data-addon-tab="bir"
+                >
+                  BIR E-Invoicing
+                </button>
+                <button
+                  class="addon-tab"
+                  id="addon-tab-sap"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="addon-panel-sap"
+                  data-addon-tab="sap"
+                  tabindex="-1"
+                >
+                  SAP &amp; ERP Sync
+                </button>
+              </div>
+            </div>
+
+            <div class="addons-views section-in" style="animation-delay: 0.2s">
+              <div
+                class="addons-panel is-active"
+                id="addon-panel-bir"
+                role="tabpanel"
+                aria-labelledby="addon-tab-bir"
+                data-addon-panel="bir"
+              >
+                <article class="addon-card">
+                  <div class="addon-number" aria-hidden="true">01</div>
+                  <div class="addon-card-body">
+                    <h3>Create or Import</h3>
+                    <p>Type one sales invoice, upload batch files (Excel, CSV, JSON), push directly from your ERP, or let a document status create it.</p>
+                  </div>
+                </article>
+                <article class="addon-card">
+                  <div class="addon-number" aria-hidden="true">02</div>
+                  <div class="addon-card-body">
+                    <h3>BIR Compliance Check</h3>
+                    <p>PIMS automatically validates Buyer TIN, line items, and VAT computations against official BIR rules to prevent rejections.</p>
+                  </div>
+                </article>
+                <article class="addon-card">
+                  <div class="addon-number" aria-hidden="true">03</div>
+                  <div class="addon-card-body">
+                    <h3>Authorize &amp; Transmit</h3>
+                    <p>Route invoices through internal sign-off chains if required, then transmit approved records directly to the BIR EIS portal.</p>
+                  </div>
+                </article>
+                <article class="addon-card">
+                  <div class="addon-number" aria-hidden="true">04</div>
+                  <div class="addon-card-body">
+                    <h3>Monitor BIR Status</h3>
+                    <p>Track invoice progression in real time from Sent to BIR to Accepted, backed by full audit trail history.</p>
+                  </div>
+                </article>
+              </div>
+
+              <div
+                class="addons-panel"
+                id="addon-panel-sap"
+                role="tabpanel"
+                aria-labelledby="addon-tab-sap"
+                aria-hidden="true"
+                data-addon-panel="sap"
+                inert
+              >
+                <article class="addon-card">
+                  <div class="addon-number" aria-hidden="true">01</div>
+                  <div class="addon-card-body">
+                    <h3>Template Setup</h3>
+                    <p>Assign customized templates matching each client's target layout—configuring header/line fields, import logic, and expected export formats for SAP or other ERPs.</p>
+                  </div>
+                </article>
+                <article class="addon-card">
+                  <div class="addon-number" aria-hidden="true">02</div>
+                  <div class="addon-card-body">
+                    <h3>File Import</h3>
+                    <p>Preview and import Excel or CSV files directly, or enable the Documents link to let a workflow approval status auto-create the transaction record.</p>
+                  </div>
+                </article>
+                <article class="addon-card">
+                  <div class="addon-number" aria-hidden="true">03</div>
+                  <div class="addon-card-body">
+                    <h3>Validate &amp; Resolve</h3>
+                    <p>Automatically check required fields and custom value rules. Resolve missing parameters directly in PIMS to flag the record as Processed &amp; Ready.</p>
+                  </div>
+                </article>
+                <article class="addon-card">
+                  <div class="addon-number" aria-hidden="true">04</div>
+                  <div class="addon-card-body">
+                    <h3>Export to ERP</h3>
+                    <p>Download the finalized file in your exact template layout, fully formatted for your accounting team to upload directly into SAP.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="band" id="modules" hidden>
+            <h2>Modules</h2>
+            <p>Documents, approvals, e-invoicing, transactions, and reports — each ready when you are.</p>
+          </section>
+
+          <section class="band" id="pricing" hidden>
+            <h2>Pricing</h2>
+            <p>Plans for multi-entity property teams that need visibility and audit readiness.</p>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

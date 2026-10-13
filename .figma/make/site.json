@@ -1,0 +1,10 @@
+{
+  "description": "Seamlessly continue your projects with an intuitive interface that enhances collaboration and productivity for teams and individuals.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
